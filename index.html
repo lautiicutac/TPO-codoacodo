@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/503d943fee.js" crossorigin="anonymous"></script>
+    <script src="JS/main.js" defer></script>
+    <title>TPO-CodoACodo</title>
+</head>
+
+
+
+<body>
+    <main>
+        <section id="dash">
+            <div class="contenedor">
+                <header class="encabezado">
+                    <h1>Bienvenidos a nuestra Pagina Web</h1>
+                        <a href="#pie"><i class="fa-solid fa-chevron-down fa-2xl"></i></a>
+                        <a href="#formulario"><i class="fa-solid fa-list fa-2xl" style="color: #030303;"></i></a>
+                        <a href="track.html" target=_blank><i class="fa-regular fa-images fa-2xl"
+                                style="color:#030303"></i></a>
+                </header>
+                <main class="contenido">
+                    <a class="weatherwidget-io" href="https://forecast7.com/es/n34d60n58d38/buenos-aires/"
+                        data-label_1="BUENOS AIRES" data-label_2="Clima" data-font="Roboto"
+                        data-icons="Climacons Animated" data-days="3">BUENOS AIRES Clima</a>
+                    <script>
+                        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+                    </script>
+                </main>
+                <aside class="sidebar">
+                    <a class="twitter-timeline" data-width="400" data-height="800" data-theme="dark"
+                        href="https://twitter.com/EducacionBA?ref_src=twsrc%5Etfw"></a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </aside>
+                <div class="widget-1">
+                    <!-- Uso de iconos de FontAwesome -->
+                    <div class="icon"><i class="fa-solid fa-money-bill-transfer fa-shake fa-2xl"></i></div>
+                    <!-- Uso de etiquetas Semanticas -->
+                    <strong>
+                        Moneda: <span id="monedaw1"></span> <br>
+                        Compra: <span id="compraw1"></span> <br>
+                        Venta: <span id="ventaw1"></span>
+                    </strong>
+                </div>
+                <div class="widget-2">
+                    <!-- Uso de iconos de FontAwesome -->
+                    <div class="icon"><i class="fa-solid fa-money-bill-transfer fa-shake fa-2xl"></i></div>
+                    <!-- Uso de etiquetas Semanticas -->
+                    <strong>
+                        Moneda: <span id="monedaw2"></span> <br>
+                        Compra: <span id="compraw2"></span> <br>
+                        Venta: <span id="ventaw2"></span>
+                    </strong>
+                </div>
+                <div class="widget-3">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente assumenda ipsam, alias
+                        mollitia nihil sit dolorum id voluptatibus libero laudantium eaque cum pariatur at minus
+                        laboriosam, ipsa ad harum repellat!
+                    </p>
+                </div>
+                <div class="formulario" id="formulario">
+                    <form name="fvalida">
+                        <label for="nombre">Nombre Completo:</label>
+                        <input type="text" id="nombre" name="nombre">
+                        <label for="edad">Edad:</label>
+                        <input type="text" id="edad" name="edad" size="3" maxlength="2">
+                        <label for="interes">Interés:</label>
+                        <select id="interes" name="interes">
+                            <option value="Elegir">Elegir</option>
+                            <option value="Comercial">Contacto comercial</option>
+                            <option value="Clientes">Atención al cliente</option>
+                            <option value="Proveedores">Contacto de proveedores</option>
+                        </select>
+                        <div>
+                            <input type="button" id="b1" value="Enviar" onclick="validarEnviar()">
+                        </div>
+                    </form>
+                </div>
+                <div>
+                </div>
+        </section>
+        <section id="footer">
+            <footer class="pie" id="pie">
+                <h3>Trabajo Practico Codo a Codo</h3><br>
+                <ul class="list">
+                    <li><a href="https://github.com/hexcellit" target="_blank"><i
+                                class="fa-brands fa-square-github fa-2xl" style="color: #3d8373;"></i> Alfredo</a></li>
+                    <li><a href="https://github.com/geraldine244" target="_blank"><i
+                                class="fa-brands fa-square-github fa-2xl" style="color: #743749;"></i> Geraldine</a>
+                    </li>
+                    <li><a href="https://github.com/lautiicutac" target="_blank"><i
+                                class="fa-brands fa-square-github fa-2xl" style="color: #594b29;"></i> Lautaro</a></li>
+                    <li><a href="https://github.com/VanesaEdith" target="_blank"><i
+                                class="fa-brands fa-square-github fa-2xl" style="color: #542f63;"></i> Vanesa</a></li>
+                </ul><br>
+            </footer>
+        </section>
+    </main>
+</body>
+
+</html>

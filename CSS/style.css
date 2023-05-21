@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(5, 5, 5);
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px; /*ancho máximo de la página*/
+    margin: 20px auto; /*auto permite centrar nuestra página en forma horizontal*/
+    display: grid;
+    gap: 20px; /*nos ahorramos tenes que poner márgenes entre los elementos*/
+
+    /*3 columnas: contenido (con 2 widgets) + sidebar*/
+    grid-template-columns: repeat(3,1fr);
+
+    /*4 filas: header, contenido, widgets, footer*/
+    grid-template-rows: repeat(6, auto);
+
+    grid-template-areas: "encabezado encabezado encabezado"
+                         "contenido contenido sidebar"
+                         "widget-1 widget-2 sidebar"
+                         "widget-3 widget-3 sidebar"
+                         "formulario formulario sidebar"
+                         /* "pie pie pie"; */;
+}
+
+.contenedor > div,
+.contenedor .encabezado,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .formulario
+{
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.contenedor .encabezado{
+    background: #06331e;
+    color: #0a0909;
+    grid-area: encabezado; 
+    animation-name: animacion1;
+    animation-duration: 3s;
+
+    
+}
+
+.encabezado a {
+    text-decoration: none;
+    color: #050000;
+    
+  }
+.encabezado h1 {
+    text-align: center;
+}
+.contenedor .contenido{
+    background: #06331e;
+    grid-area: contenido;
+    animation-name: animacion2;
+    animation-duration: 3s;
+}
+
+.contenedor .sidebar{
+    background: black;
+    /*utilizamos flexbox para alinear el contenido*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: sidebar; 
+    animation-name: animacion3;
+    animation-duration: 3s;
+}
+
+
+.contenedor .widget-1,
+.contenedor .widget-2,
+.contenedor .widget-3{
+    background: #06331e;
+    color: #000;
+    height: 100px;
+    /*utilizamos flexbox para alinear el contenido*/
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    animation-name: animacion4;
+    animation-duration: 3s;
+}
+
+.contenedor .widget-1{
+    grid-area: widget-1; 
+}
+
+.contenedor .widget-2{
+    grid-area: widget-2; 
+}
+
+.contenedor .widget-3{
+    grid-area: widget-3; 
+}
+
+.contenedor .formulario{
+    background: #06331e;
+    color: #fff;
+    grid-area: formulario;
+    animation-name: animacion1;
+    animation-duration: 3s;
+}
+.formulario {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .formulario label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .formulario input[type="text"],
+  .formulario select {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+  }
+  
+  .formulario select {
+    width: 100%;
+  }
+  
+  .formulario input[type="button"] {
+    background-color: #050000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+.pie{
+    background: #06331e;
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-radius: 4px;
+    color: #050000;
+    animation-name: animacion1;
+    animation-duration: 3s;
+}
+/* Enlaces github */
+.list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+  }
+
+  .list li a {
+    text-decoration: none;
+    color: #050000;
+  }
+  
+  
+
+/* Breaking points */
+
+@media screen and (max-width: 768px){
+    .contenedor{
+        grid-template-areas: "encabezado encabezado encabezado"
+                             "contenido contenido contenido"
+                             "sidebar sidebar sidebar"
+                             "widget-1 widget-1 widget-2"
+                             "widget-3 widget-3 widget-3"
+                             "formulario formulario sidebar"
+                             /* ;"pie pie pie" */
+    }
+}
+
+@media screen and (max-width: 450px){
+    .contenedor{
+        grid-template-areas: "encabezado encabezado encabezado"
+                             "contenido contenido contenido"
+                             "widget-1 widget-1 widget-1"
+                             "widget-2 widget-2 widget-2"
+                             "widget-3 widget-3 widget-3"
+                             "sidebar sidebar sidebar"
+                             "formulario formulario formulario"
+                             /* "pie pie pie"; */;
+    }
+}
+/* Secuencias de colores */
+
+@keyframes animacion1 {
+    0%   {background-color:#542f63}
+    25%  {background-color:#743749}
+    50%  {background-color:#594b29}
+    75%  {background-color:#3d8373}
+    100% {background-color:#06331e}
+}
+
+@keyframes animacion2 {
+    0%   {background-color:#3d8373}
+    25%  {background-color:#542f63}
+    50%  {background-color:#743749}
+    75%  {background-color:#594b29}
+    100% {background-color:#06331e}
+}
+
+@keyframes animacion3 {
+    0%   {background-color:#594b29}
+    25%  {background-color:#3d8373}
+    50%  {background-color:#542f63}
+    75%  {background-color:#743749}
+    100% {background-color:#06331e}
+}
+
+@keyframes animacion4 {
+    0%   {background-color:#743749}
+    25%  {background-color:#594b29}
+    50%  {background-color:#3d8373}
+    75%  {background-color:#542f63}
+    100% {background-color:#06331e}
+}
+
+/* Fin Secuencia de colores */
