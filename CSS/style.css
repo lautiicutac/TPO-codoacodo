@@ -40,7 +40,7 @@ body{
 }
 
 .contenedor .encabezado{
-    background: #06331e;
+    background: #237532;
     color: #0a0909;
     grid-area: encabezado; 
     animation-name: animacion1;
@@ -58,7 +58,7 @@ body{
     text-align: center;
 }
 .contenedor .contenido{
-    background: #06331e;
+    background: #237532;
     grid-area: contenido;
     animation-name: animacion2;
     animation-duration: 3s;
@@ -79,7 +79,7 @@ body{
 .contenedor .widget-1,
 .contenedor .widget-2,
 .contenedor .widget-3{
-    background: #06331e;
+    background: #237532;
     color: #000;
     height: 100px;
     /*utilizamos flexbox para alinear el contenido*/
@@ -103,7 +103,7 @@ body{
 }
 
 .contenedor .formulario{
-    background: #06331e;
+    background: #237532;
     color: #fff;
     grid-area: formulario;
     animation-name: animacion1;
@@ -143,7 +143,7 @@ body{
   
   
 .pie{
-    background: #06331e;
+    background: #237532;
     width: 90%;
     max-width: 1000px;
     margin: 20px auto;
@@ -201,7 +201,7 @@ body{
     25%  {background-color:#743749}
     50%  {background-color:#594b29}
     75%  {background-color:#3d8373}
-    100% {background-color:#06331e}
+    100% {background-color:#237532}
 }
 
 @keyframes animacion2 {
@@ -209,7 +209,7 @@ body{
     25%  {background-color:#542f63}
     50%  {background-color:#743749}
     75%  {background-color:#594b29}
-    100% {background-color:#06331e}
+    100% {background-color:#237532}
 }
 
 @keyframes animacion3 {
@@ -217,7 +217,7 @@ body{
     25%  {background-color:#3d8373}
     50%  {background-color:#542f63}
     75%  {background-color:#743749}
-    100% {background-color:#06331e}
+    100% {background-color:#237532}
 }
 
 @keyframes animacion4 {
@@ -225,7 +225,7 @@ body{
     25%  {background-color:#594b29}
     50%  {background-color:#3d8373}
     75%  {background-color:#542f63}
-    100% {background-color:#06331e}
+    100% {background-color:#237532}
 }
 
 /* Fin Secuencia de colores */
