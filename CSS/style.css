@@ -120,9 +120,6 @@ body{
     display: block;
     margin-bottom: 10px;
   }
-  .formulario fieldset {
-      border-radius: 12px;
-  }
   
   .formulario input[type="text"],
   .formulario select {
@@ -143,7 +140,6 @@ body{
     color: #366772;
     font-weight: bold;
     padding: 10px 20px;
-    border: none;
     cursor: pointer;
     border-radius: 6px;
   }
