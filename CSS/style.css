@@ -124,6 +124,7 @@ body{
   .formulario select {
     background-color: #b6feae;
     color: #000000;
+    font-weight: bold;
     padding: 10px;
     border: none;
     margin-bottom: 10px;
