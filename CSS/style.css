@@ -104,7 +104,7 @@ body{
 
 .contenedor .formulario{
     background: #237532;
-    color: #fff;
+    color: #000000;
     grid-area: formulario;
     animation-name: animacion1;
     animation-duration: 3s;
@@ -135,7 +135,7 @@ body{
   
   .formulario input[type="button"] {
     background-color: #050000;
-    color: #fff;
+    color: #000000;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
