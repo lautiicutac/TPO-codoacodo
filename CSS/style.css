@@ -125,11 +125,11 @@ body{
   
   .formulario input[type="text"],
   .formulario select {
-    background-color: #b6feae;
+    background-color: #4b813b;
     color: #000000;
     font-weight: bold;
     padding: 10px;
-    border: none;
+    border-radius: 12px;
     margin-bottom: 10px;
   }
   
