@@ -133,6 +133,7 @@ body{
   
   .formulario select {
     width: 100%;
+    border-radius: 2px;
   }
   
   .formulario input[type="button"] {
