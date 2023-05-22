@@ -120,7 +120,7 @@ body{
     margin-bottom: 10px;
   }
   .formulario fieldset {
-      border-radius: 6px;
+      border-radius: 12px;
   }
   
   .formulario input[type="text"],
