@@ -110,9 +110,10 @@ body{
     animation-duration: 3s;
 }
 .formulario {
-    background-color: #366772;
+    background-color: #4b813b;
     color: #000000;
     padding: 20px;
+    border-radius: 12px;
   }
   
   .formulario label {
@@ -144,7 +145,7 @@ body{
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    border-radius: 6px
+    border-radius: 6px;
   }
   
   
