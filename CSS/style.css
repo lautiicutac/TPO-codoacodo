@@ -134,11 +134,12 @@ body{
   }
   
   .formulario input[type="button"] {
-    background-color: #050000;
+    background-color: #a9a9a9;
     color: #366772;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    border-radius: 6px
   }
   
   
