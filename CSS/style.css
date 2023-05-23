@@ -74,6 +74,7 @@ body{
     grid-area: sidebar; 
     animation-name: animacion3;
     animation-duration: 3s;
+    padding: 2px;
 }
 
 
