@@ -117,7 +117,7 @@ body{
     color: var(--negro-color);
     /* background: #06331e; */
     /* color: #000; */
-    height: 100px;
+    height: auto;
     /*utilizamos flexbox para alinear el contenido*/
     display: flex;
     align-items:center;
