@@ -1,10 +1,28 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
+:root {
+    --verde-color: #93BFB7;
+    --negro-color: #2D3E40;
+    --acento-color: #E4F2E7;
+    --cuarto-color: #925357;
+    /* --quinto-color: #8D4DBD; */
+    
+}
+header{
+    display: flex;
+    align-items: center;
+}
+
+
+
 body{
-    background: rgb(5, 5, 5);
-    color: #000;
+    /* background: rgb(5, 5, 5); */
+    background: var(--negro-color);
+    color: var(--negro-color);
+    /* color: #000; */
     font-family: 'Roboto', sans-serif;
 }
 
@@ -37,40 +55,54 @@ body{
 {
     padding: 20px;
     border-radius: 12px;
+
+    box-shadow: #06060630 0px 5px 15px;
 }
 
 .contenedor .encabezado{
-    background: #237532;
-    color: #0a0909;
+    background-color: var(--verde-color);
+    color: var(--negro-color);
+    /* background: #06331e; */
+    /* color: #0a0909; */
     grid-area: encabezado; 
     animation-name: animacion1;
     animation-duration: 3s;
 
-    
 }
 
 .encabezado a {
     text-decoration: none;
-    color: #050000;
+    /* color: #050000; */
+    color: var(--negro-color);
+    padding-right: 5px;
     
-  }
+}
+.encabezado i:hover {
+    scale: 95%;
+    transition: 0.5s;
+}
 .encabezado h1 {
     text-align: center;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 0 auto;
+    margin-left: 20%;
 }
 .contenedor .contenido{
-    background: #237532;
+    background: var(--verde-color);
+    /* background: #06331e; */
     grid-area: contenido;
     animation-name: animacion2;
     animation-duration: 3s;
 }
 
 .contenedor .sidebar{
-    background: black;
+    background: #141d26;    /* twitter iframe*/
+    /* background: black; */
     /*utilizamos flexbox para alinear el contenido*/
     display: flex;
     align-items: center;
     justify-content: center;
-    height: auto;
     grid-area: sidebar; 
     animation-name: animacion3;
     animation-duration: 3s;
@@ -80,15 +112,30 @@ body{
 .contenedor .widget-1,
 .contenedor .widget-2,
 .contenedor .widget-3{
-    background: #237532;
-    color: #000;
-    height: auto;
+    background: var(--verde-color);
+    color: var(--negro-color);
+    /* background: #06331e; */
+    /* color: #000; */
+    height: 100px;
     /*utilizamos flexbox para alinear el contenido*/
     display: flex;
     align-items:center;
     justify-content: center;
     animation-name: animacion4;
     animation-duration: 3s;
+}
+
+.widget-1 i {
+    margin-left: 5px;
+    margin-right: 15px;
+}
+.widget-2 i {
+    margin-left: -5px;
+    margin-right: 15px;
+}
+
+.weatherwidget-io a {
+    color: var(--negro-color);
 }
 
 .contenedor .widget-1{
@@ -101,21 +148,21 @@ body{
 
 .contenedor .widget-3{
     grid-area: widget-3; 
-    background: #000000;
 }
 
 .contenedor .formulario{
-    background: #237532;
-    color: #000000;
+    background-color: var(--verde-color);
+    color: var(--negro-color);
+    /* background: #06331e; */
+    /* color: #fff; */
     grid-area: formulario;
     animation-name: animacion1;
     animation-duration: 3s;
 }
 .formulario {
-    background-color: #4b813b;
-    color: #000000;
+    background-color: #222;
+    color: #fff;
     padding: 20px;
-    border-radius: 12px;
   }
   
   .formulario label {
@@ -125,11 +172,11 @@ body{
   
   .formulario input[type="text"],
   .formulario select {
-    background-color: #4b813b;
-    color: #000000;
-    font-weight: bold;
+    background-color: var(--acento-color);
+    /* color: #fff; */
+    color: var(--negro-color);
     padding: 10px;
-    border-radius: 12px;
+    border: none;
     margin-bottom: 10px;
   }
   
@@ -138,22 +185,40 @@ body{
   }
   
   .formulario input[type="button"] {
-    background-color: #a9a9a9;
-    color: #366772;
-    font-weight: bold;
+    /* background-color: #050000; */
+    /* color: #fff; */
+    background-color: var(--acento-color);
+    color: var(--negro-color);
     padding: 10px 20px;
+    border: none;
     cursor: pointer;
-    border-radius: 6px;
+    
+  }
+  .formulario input[type="button"]:hover {
+    background-color: var(--cuarto-color);
+    color:var(--acento-color) ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 0.7s 0s;
+  }
+  .formulario input[type="button"]:active {
+    background-color: var(--negro-color);
+    box-shadow: rgba(227, 227, 227, 0.25) 0px 30px 60px -12px inset, rgba(255, 255, 255, 0.3) 0px 18px 36px -18px inset;
   }
   
   
 .pie{
-    background: #237532;
+    /* background: #06331e; */
+    background:var(--verde-color) ;
+
     width: 90%;
     max-width: 1000px;
     margin: 20px auto;
+    padding: 20px;
     border-radius: 4px;
-    color: #050000;
+
+    /* color: #050000; */
+    color: var(--negro-color);
+
     animation-name: animacion1;
     animation-duration: 3s;
 }
@@ -164,11 +229,17 @@ body{
     justify-content: space-around;
     list-style: none;
     padding: 0;
+    margin-top: 10px;
   }
+.list li:hover {
+    scale: 110%;
+    transition: linear 650ms 0ms;
+}
 
   .list li a {
     text-decoration: none;
-    color: #050000;
+    /* color: #050000; */
+    color: var(--negro-color);
   }
   
   
@@ -206,7 +277,7 @@ body{
     25%  {background-color:#743749}
     50%  {background-color:#594b29}
     75%  {background-color:#3d8373}
-    100% {background-color:#237532}
+    100% {background-color:#06331e}
 }
 
 @keyframes animacion2 {
@@ -214,7 +285,7 @@ body{
     25%  {background-color:#542f63}
     50%  {background-color:#743749}
     75%  {background-color:#594b29}
-    100% {background-color:#237532}
+    100% {background-color:#06331e}
 }
 
 @keyframes animacion3 {
@@ -222,7 +293,7 @@ body{
     25%  {background-color:#3d8373}
     50%  {background-color:#542f63}
     75%  {background-color:#743749}
-    100% {background-color:#237532}
+    100% {background-color:#06331e}
 }
 
 @keyframes animacion4 {
@@ -230,7 +301,7 @@ body{
     25%  {background-color:#594b29}
     50%  {background-color:#3d8373}
     75%  {background-color:#542f63}
-    100% {background-color:#237532}
+    100% {background-color:#06331e}
 }
 
 /* Fin Secuencia de colores */
