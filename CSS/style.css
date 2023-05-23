@@ -81,7 +81,7 @@ body{
 .contenedor .widget-3{
     background: #237532;
     color: #000;
-    height: 100px;
+    height: auto;
     /*utilizamos flexbox para alinear el contenido*/
     display: flex;
     align-items:center;
@@ -100,7 +100,7 @@ body{
 
 .contenedor .widget-3{
     grid-area: widget-3; 
-    height: 315px
+    <!--height: 315px-->
 }
 
 .contenedor .formulario{
