@@ -100,6 +100,7 @@ body{
 
 .contenedor .widget-3{
     grid-area: widget-3; 
+    height: 315px
 }
 
 .contenedor .formulario{
