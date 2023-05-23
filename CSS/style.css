@@ -70,6 +70,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: auto;
     grid-area: sidebar; 
     animation-name: animacion3;
     animation-duration: 3s;
@@ -100,7 +101,7 @@ body{
 
 .contenedor .widget-3{
     grid-area: widget-3; 
-    <!--height: 315px-->
+    background: #000000;
 }
 
 .contenedor .formulario{
