@@ -149,7 +149,6 @@ body{
 
 .contenedor .widget-3{
     grid-area: widget-3; 
-    height: auto;
 }
 .widget-3 iframe {
     height: 100%;
