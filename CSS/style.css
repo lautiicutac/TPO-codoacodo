@@ -160,6 +160,7 @@ body {
 
  .widget-3 iframe {
     border-radius: 10px;
+    padding: none;
 }
 
 .contenedor .formulario {
