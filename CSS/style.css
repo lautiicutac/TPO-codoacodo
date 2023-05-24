@@ -228,6 +228,7 @@ body {
     margin: 20px auto;
     /* padding: 20px; */
     border-radius: 12px;
+    padding: 20px 0 15px; 
     color: var(--negro-color);
     animation-name: animacion1;
     animation-duration: 3s;
