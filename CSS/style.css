@@ -158,10 +158,12 @@ body {
     height: fit-content;
 }
 
-/* .widget-3 iframe {
-    height: 100%;
-    width: 100%;
-} */
+.widget-3 iframe {
+    /* height: 100%;
+    width: 100%; */
+    
+    border-radius: 10px;
+} 
 
 .contenedor .formulario {
     background-color: var(--verde-color);
@@ -226,7 +228,7 @@ body {
     width: 90%;
     max-width: 1000px;
     margin: 20px auto;
-    /* padding: 20px; */
+    padding: 20px 0 15px; 
     border-radius: 12px;
     color: var(--negro-color);
     animation-name: animacion1;
