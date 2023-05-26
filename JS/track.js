@@ -11,7 +11,7 @@ const handleOnUp = () => {
 }
 
 const handleOnMove = e => {
-  e.preventDefault(); // Previene scrolling en disposiivos tactiles
+  //e.preventDefault(); // Previene scrolling en disposiivos tactiles
 
   if(track.dataset.mouseDownAt === "0") return;
 //   Determinacion de la posicion relativa del cursor en movimiento
